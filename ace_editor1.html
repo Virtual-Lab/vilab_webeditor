@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="de-de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  
+  <title>Ace-editor Test1</title>
+  
+  <link rel="stylesheet" type="text/css" href="css/editor.css">
+  
+
+</head>
+
+<body>
+
+<main>
+
+<div id="edit_run">
+
+<button type='button' id = 'runbutton'>run program</button>
+
+</div>
+    
+<div id="editor"><textarea rows="40" cols="30">
+var world = document.createElement('h1');
+var helloWorld = document.createTextNode('Hello world!');
+
+world.appendChild(helloWorld);
+
+// append your creation to the vimu-object
+show.appendChild(world);</textarea></div><!-- End of Editor Section -->
+ 
+<div id="show"><first_script></first_script></div>
+
+</main>
+
+<div id="editor_code"><script id="myScript"></script></div>
+<script src="js/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/editor.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+
+</html>

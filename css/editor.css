@@ -1,0 +1,22 @@
+    #editor { 
+        /*position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;*/
+        height: 400px;
+        width: 48%;
+    }
+    
+
+    #sample-live-editor {
+     
+            padding: 0;
+            
+        }
+
+    #show {
+
+        float: left;
+        width: 48%;
+    }
