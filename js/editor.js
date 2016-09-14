@@ -6,14 +6,14 @@ var editor, code, canvasEl, runButton, jsEl, delEl;
     editor.setTheme("ace/theme/twilight");
     editor.getSession().setMode("ace/mode/javascript");
     
-    // enable autocompletion and snippets
+    // enable autocompletion and snippets, probably not working yet
     editor.setOptions({
         enableBasicAutocompletion: true,
         enableSnippets: true,
         enableLiveAutocompletion: false
     });
 
-    show = document.getElementById('show');
+    view = document.getElementById('view');
     runButton = document.getElementById('runbutton');
 
     jsEl = document.getElementById('editor_code');
@@ -30,8 +30,8 @@ var editor, code, canvasEl, runButton, jsEl, delEl;
     	script.innerHTML = code;
         script.id = "myScript"
         
-        for (i=0; i < show.childNodes.length; i++) {
-            show.removeChild(show.childNodes[i]);
+        for (i=0; i < view.childNodes.length; i++) {
+            view.removeChild(view.childNodes[i]);
         };
 
         jsEl.removeChild(oldscript);
